@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-image: url(/pexels-houzlook-3797991\ \(1\).jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+
+.icon{
+    display: block;
+    width: 28px;
+    height: 28px;
+}
+
+
+.hero{
+    width: 40%;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 19px;
+    top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 100; */
+}
+
+
+
+.btn{
+    background-color: #fff;
+    font-weight: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.show-btn{
+    padding:1em;
+    border: 3px solid rgb(74, 125, 213);
+    color: rgb(74, 125, 213);
+    cursor: pointer;
+    border-radius: 10px;
+    background: #fff;
+    transition: box-shadow 300ms;
+}
+
+.show-btn:hover{
+    box-shadow: 0 0 5px 5px rgba(74, 125, 213, 0.3);
+    background-color: transparent;
+}
+
+.content{
+    width: 80%;
+}
+
+
+/* .modal-bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    background-color: rgb(74, 125, 213);
+    opacity: 0;
+    z-index: -2;
+} */
+
+.modal-bg{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(120, 119, 120, 0.456);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    visibility: hidden;
+    z-index: -100;
+    transition: visbility 300ms ease-in, 
+}
+
+.close {
+    transform: translate(190px, -120px);
+    background-color: inherit;
+}
+
+.modal{
+    width:40%;
+    background-color: #fff;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 190px auto;
+    border-radius: 20px;
+    
+}
+
+.display{
+    visibility: visible;
+    z-index: 100;
+  
+}
+
+
+
